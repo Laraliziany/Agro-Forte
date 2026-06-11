@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte</title>
+    <title>Agro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Agro Forte</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Agro Sustentável</h1>
+        <p>Produzindo alimentos com responsabilidade ambiental</p>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre a Agro Forte</h2>
-        <p>A Agro Forte é líder em soluções agrícolas, oferecendo tecnologia e suporte para maximizar sua produção.</p>
-    </section>
-
-    <section id="servicos">
-        <h2>Serviços</h2>
+    <nav>
         <ul>
-            <li>Consultoria agrícola</li>
-            <li>Fornecimento de insumos</li>
-            <li>Gestão de propriedades rurais</li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#praticas">Práticas</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
-        <button id="btnServicos">Saiba Mais</button>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>O Futuro da Agricultura é Sustentável</h2>
+            <p>
+                Tecnologias e práticas que preservam o meio ambiente,
+                aumentam a produtividade e garantem alimentos de qualidade.
+            </p>
+            <button id="saibaMais">Saiba Mais</button>
+        </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form id="formContato">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Agro Sustentável</h2>
+            <p>
+                O agro sustentável busca equilibrar a produção agrícola
+                com a conservação dos recursos naturais, promovendo
+                desenvolvimento econômico e responsabilidade social.
+            </p>
+        </section>
+
+        <section id="beneficios">
+            <h2>Benefícios</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Preservação Ambiental</h3>
+                    <p>Redução do impacto ambiental e conservação da biodiversidade.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Economia de Recursos</h3>
+                    <p>Uso eficiente da água, energia e insumos agrícolas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Produção Responsável</h3>
+                    <p>Alimentos mais seguros e de melhor qualidade para a população.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="praticas">
+            <h2>Práticas Sustentáveis</h2>
+            <ul>
+                <li>Rotação de culturas</li>
+                <li>Plantio direto</li>
+                <li>Uso racional da água</li>
+                <li>Controle biológico de pragas</li>
+                <li>Recuperação de áreas degradadas</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p id="mensagem">
+                Clique no botão abaixo para apoiar a agricultura sustentável.
+            </p>
+            <button id="apoiar">Apoiar Projeto</button>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Agro Sustentável | Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
