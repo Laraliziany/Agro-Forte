@@ -1,39 +1,42 @@
-const btnMensagem = document.getElementById("btnMensagem");
+document.getElementById("mensagemBtn").addEventListener("click", () => {
 
-btnMensagem.addEventListener("click", function() {
     alert(
-        "O agro sustentável une produtividade, inovação e preservação ambiental para garantir um futuro melhor."
+        "O agro sustentável garante produção de alimentos, preservação ambiental e qualidade de vida para as futuras gerações."
     );
+
 });
 
-const btnTecnologia = document.getElementById("btnTecnologia");
-const beneficiosTec = document.getElementById("beneficiosTec");
+const temaBtn = document.getElementById("temaBtn");
 
-btnTecnologia.addEventListener("click", function() {
+temaBtn.addEventListener("click", () => {
 
-    beneficiosTec.innerHTML = `
-        <h3>Benefícios da Tecnologia no Campo</h3>
-        <ul>
-            <li>Monitoramento das lavouras por drones.</li>
-            <li>Economia de água e insumos.</li>
-            <li>Maior produtividade.</li>
-            <li>Redução de desperdícios.</li>
-            <li>Menor impacto ambiental.</li>
-        </ul>
-    `;
-});
+    document.body.classList.toggle("dark");
 
-let numero = document.getElementById("numero");
-let contador = 0;
-
-const animacao = setInterval(() => {
-
-    contador++;
-
-    numero.textContent = contador;
-
-    if(contador >= 3){
-        clearInterval(animacao);
+    if(document.body.classList.contains("dark")){
+        temaBtn.textContent = "☀️ Modo Claro";
+    }else{
+        temaBtn.textContent = "🌙 Modo Escuro";
     }
 
-}, 800);
+});
+
+function animar(id, final){
+
+    let atual = 0;
+
+    const contador = setInterval(() => {
+
+        atual++;
+
+        document.getElementById(id).textContent = atual;
+
+        if(atual >= final){
+            clearInterval(contador);
+        }
+
+    }, 40);
+}
+
+animar("num1", 15);
+animar("num2", 20);
+animar("num3", 30);
